@@ -5,14 +5,256 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <title>Bootstrap</title>
 </head>
-<body>
-  <div class="container">
-    <button class="btn btn-primary">
-      ЖМАК!
-    </button>
+<body style="height: 3000px;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a href="" class="navbar-brand">Test brand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item">
+            <a href="" class="nav-link">test link</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">test link</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">test link</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">test link</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">test link</a>
+          </li>
+        </ul>
+
+        <div class="d-flex">
+          <button class="btn me-3 btn-outline-success" data-bs-toggle="modal" data-bs-target="#testModal">Sign
+            in</button>
+          <button class="btn btn-outline-danger">Sign out</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--  modal  -->
+  <div class="modal fade" id="testModal" tabindex="-1" aria-hidden="true" aria-labelledby="testModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="testModalLabel">Form</h5>
+
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="">
+            <div class="row mb-3">
+              <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+            </div>
+
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2">Radio</legend>
+
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="radios" value="option1" checked id="radios1">
+                  <label for="radios1" class="form-check-label">Radio 1</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="radios" value="option2" id="radios2">
+                  <label for="radios2" class="form-check-label">Radio 2</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="radios" value="option3" id="radios3" disabled>
+                  <label for="radios3" class="form-check-label">Radio 3</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2">Checkbox</legend>
+
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="checkbox" id="gridCheck">
+                  <label for="gridCheck" class="form-check-label">Save password</label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-secondary">Save changes</button>
+        </div>
+      </div>
+    </div>
   </div>
+  <!--  endmodal  -->
+
+  <main style="padding-top: 64px;">
+    <div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://artincontext.org/wp-content/uploads/2022/06/Wood-Carving-Art-848x530.jpg" alt="" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://www.carvedculture.com/cdn/shop/articles/Wood_carving_for_beginners_course_900x.jpg-2-2_900x_66cce877-2c62-4c9e-ae31-bf4e3ea22359.webp?v=1672520371" alt="" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://t3.ftcdn.net/jpg/02/35/05/72/360_F_235057216_8r5gsdWFUlpGMI0aP3Ma7iNFIpXCI8IH.jpg" alt="" class="d-block w-100">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Prev</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container my-5" style="background: aquamarine; min-height: 200px;">
+      <div class="row">
+        <div class="col-md-8 col-sm-12 mb-sm-2" style="background: yellow; min-height: 50px;">
+          <img src="https://www.schaaftools.com/cdn/shop/articles/IMG_5457_1200x1200.jpg?v=1623202281" alt=""
+               class="w-100">
+        </div>
+
+        <div class="col-md-4 col-sm-12" style="background: yellow; min-height: 50px;">
+          <h2>About us</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo hic non nulla numquam temporibus totam. Adipisci cupiditate eius error et eveniet, iste, labore laborum laudantium modi nam nemo numquam quod quos reprehenderit voluptatum. Asperiores cumque debitis eos esse, fugiat id laborum optio quibusdam quisquam, sequi soluta voluptatum! In, quod?</p>
+        </div>
+<!--        <div class="col" style="background: yellow; min-height: 50px;">Test col</div>-->
+      </div>
+
+      <h2 class="text-center my-5">Test heading</h2>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 text-center">
+          <h4>Будильнег</h4>
+          <i class="bi-alarm" style="font-size: 2rem; color: black;"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi iure magnam minima mollitia neque.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+          <h4>Будильнег</h4>
+          <i class="bi-alarm" style="font-size: 2rem; color: black;"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi iure magnam minima mollitia neque.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+          <h4>Будильнег</h4>
+          <i class="bi-alarm" style="font-size: 2rem; color: black;"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi iure magnam minima mollitia neque.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+          <h4>Будильнег</h4>
+          <i class="bi-alarm" style="font-size: 2rem; color: black;"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi iure magnam minima mollitia neque.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+          <h4>Будильнег</h4>
+          <i class="bi-alarm" style="font-size: 2rem; color: black;"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi iure magnam minima mollitia neque.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 text-center">
+          <h4>Будильнег</h4>
+          <i class="bi-alarm" style="font-size: 2rem; color: black;"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi iure magnam minima mollitia neque.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <p>
+        <button class="btn btn-secondary" type="button" data-bs-target="#multiCollapse1"
+                data-bs-toggle="collapse" aria-expanded="true" aria-controls="multiCollapse1">
+          Button 1
+        </button>
+        <button class="btn btn-secondary" type="button" data-bs-target="#multiCollapse2"
+                data-bs-toggle="collapse" aria-expanded="true" aria-controls="multiCollapse2">
+          Button 2
+        </button>
+        <button class="btn btn-secondary" type="button" data-bs-target=".multi-collapse"
+                data-bs-toggle="collapse" aria-expanded="true" aria-controls="multiCollapse3 multiCollapse4" aria-label="Переключатель навигации">
+          Button 3
+        </button>
+      </p>
+
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse show" id="multiCollapse1">
+            <div class="card card-body">
+              <img src="https://i.pinimg.com/564x/0b/a5/ab/0ba5aba8fc4f4cbcbb76d12fbcdec931.jpg" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="collapse multi-collapse show" id="multiCollapse2">
+            <div class="card card-body">
+              <img src="https://i.pinimg.com/564x/0b/a5/ab/0ba5aba8fc4f4cbcbb76d12fbcdec931.jpg" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="collapse multi-collapse show" id="multiCollapse3">
+            <div class="card card-body">
+              <img src="https://i.pinimg.com/564x/0b/a5/ab/0ba5aba8fc4f4cbcbb76d12fbcdec931.jpg" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="collapse multi-collapse show" id="multiCollapse4">
+            <div class="card card-body">
+              <img src="https://i.pinimg.com/564x/0b/a5/ab/0ba5aba8fc4f4cbcbb76d12fbcdec931.jpg" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
