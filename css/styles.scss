@@ -1,0 +1,83 @@
+@import '/home/codest/Projects/bootstrap_sample/node_modules/bootstrap/scss/bootstrap.scss';
+
+:root {
+  --color1: #05b1b1;
+  --color2: #52339a;
+  //font-size: 10px;
+}
+
+.footer, .section {
+  //padding: 10rem 0;
+  padding: 100px 0;
+}
+
+.header {
+  //padding: 20rem 0;
+  padding: 200px 0;
+  background-color: var(--color1);
+  background: url("../img/Elegant-Pattern-PNG-Transparent.png"), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  background: url("../img/Elegant-Pattern-PNG-Transparent.png"), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background: url("../img/Elegant-Pattern-PNG-Transparent.png"), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  filter: url("../img/Elegant-Pattern-PNG-Transparent.png"), progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+  background-size: cover;
+}
+
+.itd-play {
+  margin: 30px auto;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color1);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: var(--color2);
+  }
+}
+
+.itd-triangle {
+  margin-left: 6px;
+  height: 0;
+  width: 0;
+  border: solid;
+  border-width: 11px 0 11px 21px;
+  border-color: transparent transparent transparent var(--bs-white);
+}
+
+.btn-itd {
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 8px 30px;
+  display: block;
+  color: var(--bs-white);
+  background-color: var(--color2);
+
+  &:hover {
+    color: var(--bs-white);
+    background-color: var(--color1);
+  }
+}
+
+.embed-container {
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
