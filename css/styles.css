@@ -11863,8 +11863,16 @@ textarea.form-control-lg {
   --color2: #52339a;
 }
 
-.footer, .section {
-  padding: 100px 0;
+.footer {
+  padding: 30px 0;
+}
+.footer a svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--bs-white);
+}
+.footer a:hover svg {
+  fill: var(--color2);
 }
 
 .header {
@@ -11953,7 +11961,10 @@ textarea.form-control-lg {
   background-color: var(--color2);
 }
 
-.author, .accord, .about {
+.section {
+  padding: 100px 0;
+}
+.section:nth-child(even) {
   background-color: #f1fdff;
 }
 
